@@ -1,0 +1,148 @@
+/*CSS for the cool kids*/
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat&display=swap");
+html {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  font-weight: normal;
+  font-family: "Libre Franklin", sans-serif;
+  color: white;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: rgb(224, 61, 64);
+  background: linear-gradient(
+    45deg,
+    rgba(224, 61, 64, 1) 0%,
+    rgba(189, 69, 177, 1) 44%,
+    rgba(103, 60, 192, 1) 86%
+  );
+}
+
+/*
+* Header
+*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto 0 auto;
+}
+
+header p {
+  font-size: 12px;
+}
+
+.header-title h1 {
+  font-size: 3.14em;
+  margin: 0;
+  padding: 15px;
+  display: inline;
+}
+
+.header-title img {
+  display: inline;
+  vertical-align: bottom;
+}
+
+/*
+* Form 
+* CSS
+ */
+
+form {
+  color: #262626;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 350px;
+  width: 100%;
+  background-color: white;
+  height: 80vh;
+}
+
+.form-group {
+  font-weight: bold;
+  margin: 0 25px 12px;
+}
+
+.normal {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/*
+* Inputs
+ */
+
+label {
+  margin-bottom: 1px;
+}
+
+input {
+  color: #262626;
+  background: #fafafa;
+  border-radius: 3px;
+  height: 38px;
+  margin: 0;
+}
+
+select {
+  border: 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+
+.input:focus {
+  border: 1px solid #262626;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 21px;
+  margin-top: 7px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+  height: 70px;
+}
+
+textarea:focus {
+  border: 1px solid #262626;
+}
+
+button {
+  width: 100%;
+  border-radius: 3px;
+  outline: none;
+}
+
+button:focus {
+  border: 1px solid #262626;
+}
+
+#mybadinput {
+  height: 70%;
+}
+
+@media only screen and (max-width: 380px) {
+}

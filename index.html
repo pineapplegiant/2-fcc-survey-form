@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <title></title>
+  </head>
+  <body>
+    <!--Instagram header-->
+    <header>
+      <div class="header-title">
+        <h1 id="title">Doggogram</h1>
+        <img src="./img/camera.svg" alt="Camera svg logo" />
+      </div>
+      <p id="description">
+        Doggogram. Instagram, but for dogs.
+      </p>
+    </header>
+    <!--Main form div-->
+    <main>
+      <form method="GET" id="survey-form">
+        <!--Name-->
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            class="input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+        <!--Email-->
+        <div class="form-group">
+          <label id="email-label" for="email" required>Email</label>
+          <input
+            class="input"
+            id="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <!--Age-->
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            class="input"
+            id="number"
+            type="number"
+            max="20"
+            min="0"
+            placeholder="Age"
+            required
+          />
+        </div>
+        <!--Dog Breed-->
+        <div class="form-group">
+          <label id="dropdown-label" for="dropdown">Dog Breed</label>
+          <select class="input" id="dropdown" name="dropdown">
+            <option value="">--Please Select an option--</option>
+            <option value="beagle">Beagle</option>
+            <option value="boston Terrier">Boston Terrier</option>
+            <option value="boxer">Boxer</option>
+            <option value="bulldog">Bulldog</option>
+            <option value="chihuahu">Chihuahu</option>
+            <option value="cocker Spaniel">Cocker Spaniel</option>
+            <option value="collie">Collie</option>
+            <option value="dachschund">Dachschund</option>
+            <option value="dobermann">Dobermann</option>
+            <option value="french Bulldog">French Bulldog</option>
+            <option value="german Shepherd">German Shepherd</option>
+            <option value="golden Retriver">Golden Retriever</option>
+            <option value="great Dane">Great Dane</option>
+            <option value="greyhound">Greyhound</option>
+            <option value="labrador Retriver">Labrador Retriever</option>
+            <option value="maltese">Maltese</option>
+            <option value="mastiff">Mastiff</option>
+            <option value="pit bull">Pit bull</option>
+            <option value="pomeranian">Pomeranian</option>
+            <option value="poodle">Poodle</option>
+            <option value="pug">Pug</option>
+            <option value="rottweiler">Rottweiler</option>
+            <option value="russel Terrier">Russel Terrier</option>
+            <option value="samoyed">Samoyed</option>
+            <option value="shiba Inu">Shiba Inu</option>
+            <option value="shih Tzu">Shih Tzu</option>
+            <option value="siberian Husky">Siberian Husky</option>
+            <option value="other">Other</option>
+            <option value="mix">Mix</option>
+          </select>
+        </div>
+        <!--Gender radio button-->
+        <div class="form-group">
+          Gender
+          <div>
+            <span class="check">
+              <label class="normal" for="male">Male</label>
+              <input value="male" type="radio" name="gender" id="male" />
+            </span>
+            <span class="check">
+              <label class="normal" for="female">Female</label>
+              <input value="female" type="radio" name="gender" id="female" />
+            </span>
+          </div>
+        </div>
+        <!--Favorite Dog Tog Check Boxes-->
+        <div class="form-group">
+          Preferred Dog Toy(s)
+          <div>
+            <span class="check">
+              <label class="normal" for="frisbee">Frisbee</label>
+              <input
+                value="frisbee"
+                type="checkbox"
+                name="dog-toy"
+                id="frisbee"
+              />
+            </span>
+            <span class="check">
+              <label class="normal" for="rope-tug">Rope Tug</label>
+              <input
+                value="rope-tug"
+                type="checkbox"
+                name="dog-toy"
+                id="rope-tug"
+              />
+            </span>
+            <span class="check">
+              <label class="normal" for="tennis-ball">Tennis Ball</label>
+              <input
+                value="tennis-ball"
+                type="checkbox"
+                name="dog-toy"
+                id="tennis-ball"
+              />
+            </span>
+          </div>
+        </div>
+        <!--Text area-->
+        <div class="form-group">
+          <label for="story">Tell us your story</label>
+          <textarea
+            id="mybadinput"
+            class="input"
+            placeholder="Rex loves Peanut butter and digging holes..."
+            name="story"
+          ></textarea>
+        </div>
+        <!--Sign up button-->
+        <button id="submit" type="submit">Sign up</button>
+      </form>
+      <!--<div class="bottom">-->
+      <!--<div class="or">-->
+      <!--<div class="line"></div>-->
+      <!--<div id="or">or</div>-->
+      <!--<div class="line"></div>-->
+      <!--</div>-->
+      <!--<button type="submit">Log in with Facebook</button>-->
+      <!--</div>-->
+    </main>
+  </body>
+</html>
